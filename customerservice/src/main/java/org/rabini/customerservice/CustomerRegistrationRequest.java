@@ -1,8 +1,11 @@
 package org.rabini.customerservice;
 
-public record  CustomerRegistrationRequest( 
-	String firstName,
-	String lastName,
-	String email)
-	{
+import lombok.Getter;
+
+@Getter
+public class CustomerRegistrationRequest
+{
+	String	firstName;
+	String	lastName;
+	String	email;
 }

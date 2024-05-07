@@ -1,5 +1,7 @@
 package org.rabini.customerservice;
 
-public record FraudCheckResponse(Boolean isFraudser) {
+public class FraudCheckResponse
+{
+	Boolean isFraudser;
 
 }

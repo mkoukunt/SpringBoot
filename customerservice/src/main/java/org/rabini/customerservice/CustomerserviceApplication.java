@@ -6,10 +6,12 @@ import org.springframework.boot.autoconfigure.domain.EntityScan;
 
 @SpringBootApplication
 
-@EntityScan(basePackages = {"org.rabini.customerservice"}) 
-public class CustomerserviceApplication {
+@EntityScan(basePackages = { "org.rabini.customerservice" })
+public class CustomerserviceApplication
+{
 
-	public static void main(String[] args) {
+	public static void main(String[] args)
+	{
 		SpringApplication.run(CustomerserviceApplication.class, args);
 	}
 
