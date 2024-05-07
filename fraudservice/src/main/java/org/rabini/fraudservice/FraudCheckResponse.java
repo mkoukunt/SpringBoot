@@ -1,5 +1,13 @@
 package org.rabini.fraudservice;
 
-public record FraudCheckResponse(Boolean isFraudser) {
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.Setter;
 
+@Getter
+@Setter
+@AllArgsConstructor
+public class FraudCheckResponse
+{
+	private Boolean isFraudser;
 }
