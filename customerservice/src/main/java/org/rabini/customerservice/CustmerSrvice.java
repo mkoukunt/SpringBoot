@@ -17,7 +17,7 @@ public class CustmerSrvice
 	{
 		Customer c = Customer.builder().firstName(req.getFirstName()).lastName(req.getLastName()).email(req.getEmail()).build();
 		cr.saveAndFlush(c);
-		FraudCheckResponse res = rt.getForObject("http://localhost:8081/api/v1/fraud-check/{customerId}", FraudCheckResponse.class, c.getId());
+		FraudCheckResponse res = rt.getForObject("http://FRAUD/api/v1/fraud-check/{customerId}", FraudCheckResponse.class, c.getId());
 		cr.save(c);
 	}
 
